@@ -10,10 +10,10 @@ onload = () => {
   canvas.height = image.naturalHeight;
   ctx.drawImage(image, 0, 0);
   ctx.textAlign = 'center';
-  ctx.fillStyle = '#d9d8d4';
+  ctx.fillStyle = '#2a2a2a';
   // Draw cached Text
   ctx.shadowOffsetY = 5;
-  ctx.shadowColor = 'rgba(0,0,0, 1)';
+  ctx.shadowColor = '#a3a3a3';
   ctx.shadowBlur = 5;
   // Text starts centered at 1190
   ctx.font = '72px BTBrikRegular';
@@ -25,11 +25,11 @@ onload = () => {
 input1.addEventListener('keyup', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.shadowOffsetY = 0;
-  ctx.shadowColor = 'rgba(0,0,0, 1)';
+  ctx.shadowColor = '#a3a3a3';
   ctx.shadowBlur = 5;
   ctx.drawImage(image, 0, 0);
   ctx.shadowOffsetY = 5;
-  ctx.shadowColor = 'rgba(0,0,0, 1)';
+  ctx.shadowColor = '#a3a3a3';
   ctx.shadowBlur = 5;
   ctx.font = '72px BTBrikRegular';
   ctx.fillText(input1.value.toUpperCase().trim(), 1200, 160);
@@ -39,11 +39,11 @@ input1.addEventListener('keyup', () => {
 input2.addEventListener('keyup', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.shadowOffsetY = 0;
-  ctx.shadowColor = 'rgba(0,0,0, 1)';
+  ctx.shadowColor = '#a3a3a3';
   ctx.shadowBlur = 5;
   ctx.drawImage(image, 0, 0);
   ctx.shadowOffsetY = 5;
-  ctx.shadowColor = 'rgba(0,0,0, 1)';
+  ctx.shadowColor = '#a3a3a3';
   ctx.shadowBlur = 5;
   ctx.font = '72px BTBrikRegular';
   ctx.fillText(input1.value.toUpperCase().trim(), 1200, 160);
