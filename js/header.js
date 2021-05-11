@@ -25,7 +25,7 @@ onload = () => {
 input1.addEventListener('keyup', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.shadowOffsetY = 0;
-  ctx.shadowColor = '#a3a3a3';
+  ctx.shadowColor = '#000';
   ctx.shadowBlur = 5;
   ctx.drawImage(image, 0, 0);
   ctx.shadowOffsetY = 5;
@@ -39,7 +39,7 @@ input1.addEventListener('keyup', () => {
 input2.addEventListener('keyup', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.shadowOffsetY = 0;
-  ctx.shadowColor = '#a3a3a3';
+  ctx.shadowColor = '#000';
   ctx.shadowBlur = 5;
   ctx.drawImage(image, 0, 0);
   ctx.shadowOffsetY = 5;
