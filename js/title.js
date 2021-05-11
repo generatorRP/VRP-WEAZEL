@@ -10,10 +10,10 @@ onload = () => {
   ctx.drawImage(image, 0, 0);
   ctx.font = '52px BTBrikRegular';
   ctx.textAlign = 'start';
-  ctx.fillStyle = '#d9d8d4';
+  ctx.fillStyle = '#2a2a2a';
   // Draw cached Text
+  ctx.shadowColor = '#696969';
   ctx.shadowOffsetY = 3;
-  ctx.shadowColor = 'rgba(0,0,0,0.8)';
   ctx.shadowBlur = 4;
   // Text starts centered at 1190
   ctx.fillText(input.value.toUpperCase().trim(), 50, 50);
@@ -22,10 +22,11 @@ onload = () => {
 input.addEventListener('keyup', (e) => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.shadowOffsetY = 0;
-  ctx.shadowColor = 'rgba(0,0,0,0.8)';
+  ctx.shadowColor = '#000';
   ctx.drawImage(image, 0, 0);
+  ctx.shadowColor = '#696969';
   ctx.shadowOffsetY = 3;
-  ctx.shadowColor = 'rgba(0,0,0,0.8)';
+  ctx.shadowBlur = 4;
   // Text starts centered at 1190
   ctx.fillText(e.target.value.toUpperCase().trim(), 50, 50);
 });
